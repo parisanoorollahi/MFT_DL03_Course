@@ -1,0 +1,28 @@
+Final Project Report – Machine Learning Model
+Project Goal:
+Design a machine learning model to predict whether oils should be added to or removed from a list based on textual features, using neural networks.
+________________________________________
+Execution Steps:
+Stage	Description
+File Processing	Converted the .txt file to CSV format for analysis using pandas
+Data Encoding	Used LabelEncoder to transform text features into numeric form
+Data Splitting	Divided the dataset into training and testing sets (80/20 ratio)
+Built Two Separate Models	One using the sigmoid activation function, and the other with relu, for comparison
+Model Training	Trained both models with SGD optimizer and mean_squared_error loss over 10 epochs
+Loss Visualization	Plotted loss curves to observe model learning behavior
+________________________________________
+Model Comparison:
+Feature	Model 1 (sigmoid)	Model 2 (relu)
+Architecture	6 Dense layers	6 Dense layers
+Activation	sigmoid	relu
+Capacity	Moderate (units: 30 & 50)	Higher (units: 30, 15 & 3×100)
+Loss Reduction	Slower, less efficient	Faster, more effective
+Overall Result	Sluggish learning	Stronger performance in prediction
+________________________________________
+ Conclusion:
+•	Data preprocessing and model construction were done thoroughly and correctly.
+•	The second model with ReLU performed significantly better thanks to deeper architecture and more effective activation.
+•	Training with the basic SGD optimizer resulted in a gradual loss drop—using Adam or RMSprop could lead to faster and better learning.
+•	The loss plot clearly shows that the ReLU-based model is a better candidate for future use.
+
+

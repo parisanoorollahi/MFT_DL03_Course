@@ -1,0 +1,20 @@
+Optimizer Performance Summary
+Objective
+Compare the impact of three popular optimizers—SGD, Adam, and AdamW—on binary classification performance for a bank customer dataset (predicting customer churn).
+________________________________________
+Model Architecture:
+•	Input: 4 numerical features (Credit Score, Age, Estimated Salary, Balance)
+•	Layers: Dense(30, relu) → Dense(15, relu) → Dense(1, sigmoid)
+•	Output: Customer churn probability (binary classification)
+•	Loss Function Used: mean_squared_error in fit_model
+________________________________________
+Loss Curve Observations:
+Optimizer	Loss Reduction Trend	Learning Speed	Stability
+SGD	Slow with fluctuations	Low	Sensitive to settings
+Adam	Fast and consistent	High	Stable
+AdamW	Similar to Adam with improved decay	High	Well-suited for regularization
+From the plotted loss curves:
+•	Adam and AdamW clearly outperformed SGD in reducing loss more efficiently and reaching lower values in fewer epochs.
+•	AdamW showed slightly more stable performance, particularly in minimizing minor fluctuations in the loss curve.
+
+
